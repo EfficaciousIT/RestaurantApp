@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+	  <ScrollView
+        android:id="@+id/linear_scroll_trainee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/linear_title_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@color/Transparent" >
+				  <ImageView
+                    android:id="@+id/userImage_profile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/username" />
+                <EditText
+                    android:id="@+id/FirstName_edittext_signup"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:layout_toRightOf="@+id/userImage_profile"
+                    android:padding="8dp"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/Black"
+                    />
+                   
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@color/Transparent"
+                android:visibility="gone" >
+				  <ImageView
+                    android:id="@+id/userImage1_profile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/username" />
+                <EditText
+                    android:id="@+id/MiddleName_edittext_signup"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:layout_toRightOf="@+id/userImage1_profile"
+                    android:padding="8dp"
+                    android:hint="Middle Name"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/Black"
+                    />
+                   
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Transparent"
+                android:layout_marginBottom="3dp"
+                android:visibility="gone" >
+				  <ImageView
+                    android:id="@+id/userImage2_profile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/username" />
+                <EditText
+                    android:id="@+id/LastName_edittext_signup"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:layout_toRightOf="@+id/userImage2_profile"
+                    android:padding="8dp"
+                    android:hint="Last Name"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/Black"
+                    />
+                   
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@color/Transparent">
+
+                <ImageView
+                    android:id="@+id/userImage3_email"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"                                                
+                    android:src="@drawable/email" />
+                <EditText
+                    android:id="@+id/emailId_edittext_signup"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:layout_toRightOf="@+id/userImage3_email"
+                    android:padding="8dp"
+                    android:hint="Email Id"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/Black"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@color/Transparent">
+
+                <ImageView
+                    android:id="@+id/userImage4_mobile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"                                               
+                    android:src="@drawable/mobile" />
+                <EditText
+                    android:id="@+id/mobile_edittext_signup"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:layout_toRightOf="@+id/userImage4_mobile"
+                    android:padding="8dp"
+                    android:hint="Mobile No"
+                    android:maxLength="15"
+                    android:inputType="number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/Black"
+                    />
+
+            </RelativeLayout>
+           
+			
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@color/Transparent">
+
+                <ImageView
+                    android:id="@+id/userImage6_age"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"                                     
+                    android:src="@drawable/lankmark" />
+                <EditText
+                    android:id="@+id/address2_edittext_signup"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:layout_toRightOf="@+id/userImage6_age"
+                    android:padding="8dp"
+                    android:hint="Address 2"
+                    android:inputType="text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/Black"
+                    />
+
+            </RelativeLayout>   
+
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginBottom="3dp"
+                android:background="@color/Transparent">
+
+                <ImageView
+                    android:id="@+id/userImage7_city"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"                           
+                    android:src="@drawable/lankmark" />
+                 <EditText
+                     android:id="@+id/address3_edittext_signup"
+                     style="@android:style/TextAppearance.DeviceDefault.Medium"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="5dp"
+                     android:layout_marginRight="5dp"
+                     android:background="#fff"
+                     android:elevation="4dp"
+                     android:layout_toRightOf="@+id/userImage7_city"
+                     android:padding="8dp"
+                     android:hint="Address 3"
+                     android:maxLength="200"
+                     android:inputType="text"
+                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                     android:textColor="@color/Black"
+                     />
+            </RelativeLayout> 
+           
+          <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"    
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp">
+
+                <Button 
+                    android:id="@+id/RegisterButton_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/button_style"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:text="Sign Up"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout> 

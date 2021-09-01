@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical"  >
+
+     <ListView
+         android:id="@+id/listview_orderdetails"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:layout_weight="1.0"
+         android:listSelector="@android:color/transparent" >
+    </ListView>
+ 	<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:layout_alignParentBottom="true">
+
+       <TextView
+		   android:textColor="@color/green"
+	        android:layout_width="wrap_content"
+	        android:text="Total Amount"
+		   android:textSize="14dp"
+	        android:gravity="center"
+	        android:layout_weight="1"
+	        android:textStyle="bold"
+	        android:layout_height="wrap_content"/>
+        <ImageView
+			android:layout_marginTop="5dp"
+            android:id="@+id/ruppe_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rupee" />
+         <TextView
+	        android:id="@+id/ViewOrderTotal_orderdetails"
+	        android:layout_width="wrap_content"
+	        android:gravity="center"
+			 android:padding="3dp"
+			 android:textSize="16dp"
+			 android:text="0"
+	        android:textColor="@color/green"
+	        android:textStyle="bold"
+	        android:layout_marginRight="20dp"
+	        android:layout_height="wrap_content"/>
+    </LinearLayout>
+     <LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:layout_alignParentBottom="true">
+
+       <!--<Button-->
+           <!--android:id="@+id/btnSubmittobill_orderdetails"-->
+	        <!--android:textColor="@color/White"-->
+	        <!--android:layout_width="wrap_content"-->
+	        <!--android:text="Bill"-->
+	        <!--android:gravity="center"-->
+	        <!--android:layout_weight="0.5"-->
+	        <!--android:textStyle="bold"-->
+	        <!--android:background="@color/colorPrimary"-->
+	        <!--android:layout_height="match_parent"/>-->
+       
+
+       
+        <Button
+           android:id="@+id/btnSubmittokitchen_orderdetails"
+	        android:textColor="@color/White"
+	        android:layout_width="wrap_content"
+	        android:text="kitchen"
+	        android:gravity="center"
+	        android:layout_weight="0.5"
+	        android:background="@drawable/button_style"
+			android:layout_marginStart="5dp"
+			android:layout_marginBottom="2dp"
+			android:layout_marginEnd="5dp"
+	        android:textStyle="bold"
+	        android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

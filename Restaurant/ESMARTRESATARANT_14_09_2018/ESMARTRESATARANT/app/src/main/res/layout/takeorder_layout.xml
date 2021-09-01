@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+     >
+
+     <GridView
+        android:id="@+id/gridView_takeorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:layout_margin="4dp"        
+        android:gravity="center"
+        android:numColumns="2"
+        android:focusable="false"
+        android:listSelector="@android:color/transparent"
+		android:focusableInTouchMode="false"
+        android:stretchMode="columnWidth">
+    </GridView>
+
+</RelativeLayout>

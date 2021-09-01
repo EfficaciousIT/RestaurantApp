@@ -1,0 +1,395 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="230dp">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true" />
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:id="@+id/simpleTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/thali2"
+                    android:layout_marginRight="5dp"/>
+                <TextView android:id="@+id/txt_example1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/monotypecursive"
+                    android:layout_alignParentBottom="true"
+                    android:text="Maharashtraian Food"
+                    android:textColor="@color/White"
+                    android:shadowColor="@color/Black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2" />
+                <ImageView
+                    android:id="@+id/im"
+                    android:layout_toEndOf="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/thali3"/>
+                <TextView android:id="@+id/txt_example2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/monotypecursive"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/img"
+                    android:text="South Indian Food"
+                    android:textColor="@color/White"
+                    android:shadowColor="@color/Black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_below="@+id/linear1"
+            android:id="@+id/linear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="4dp"
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/starter"
+                />
+            <TextView android:id="@+id/txt_example3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/monotypecursive"
+                android:layout_above="@+id/im2"
+                android:text="Starter"
+                android:textColor="@color/White"
+                android:shadowColor="@color/Black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+            <ImageView
+                android:id="@+id/im2"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/teabeverges"/>
+            <TextView android:id="@+id/txt_example4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/monotypecursive"
+                android:layout_alignParentBottom="true"
+                android:text="Tea Beverages"
+                android:textColor="@color/White"
+                android:shadowColor="@color/Black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+            <ImageView
+                android:id="@+id/im3"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/pizzas"/>
+            <TextView android:id="@+id/txt_example5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/monotypecursive"
+                android:layout_toRightOf="@+id/im2"
+                android:text="  Pizza"
+                android:textColor="@color/White"
+                android:shadowColor="@color/Black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative3"
+            android:layout_below="@+id/linear2">
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:id="@+id/img7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/sandwich"
+                android:layout_marginRight="5dp"/>
+            <TextView android:id="@+id/txt_example7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/monotypecursive"
+                android:layout_alignParentBottom="true"
+                android:text="Sandwich"
+                android:textColor="@color/White"
+                android:shadowColor="@color/Black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+            <ImageView
+                android:id="@+id/juicebevergesimg"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/img7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/juicebeverges"/>
+            <TextView android:id="@+id/txt_example8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/monotypecursive"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/img7"
+                android:text="Juice Beverages"
+                android:textColor="@color/White"
+                android:shadowColor="@color/Black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_below="@+id/relative3"
+            android:id="@+id/linear3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="4dp"
+                android:id="@+id/img4"
+                android:layout_toEndOf="@+id/img6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/rice"
+                />
+            <TextView android:id="@+id/txt_example90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/monotypecursive"
+                android:layout_above="@+id/im4"
+                android:layout_toRightOf="@+id/img6"
+                android:text="Rice"
+                android:textColor="@color/White"
+                android:shadowColor="@color/Black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+            <ImageView
+                android:id="@+id/im4"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/img4"
+                android:layout_toEndOf="@+id/img6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/chinese"/>
+            <TextView android:id="@+id/txt_example91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/monotypecursive"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/img6"
+                android:text="Chinese"
+                android:textColor="@color/White"
+                android:shadowColor="@color/Black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:id="@+id/img6"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/falooda"/>
+            <TextView android:id="@+id/txt_example9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/monotypecursive"
+                android:layout_alignParentBottom="true"
+                android:text="Falooda"
+                android:textColor="@color/White"
+                android:shadowColor="@color/Black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/relative5"
+            android:layout_below="@+id/linear3">
+            <ImageView
+                android:layout_marginTop="4dp"
+                android:id="@+id/img9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/manicourse"
+                android:layout_marginRight="5dp"/>
+            <TextView android:id="@+id/txt_example92"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/monotypecursive"
+                android:layout_alignParentBottom="true"
+                android:text="Main Course"
+                android:textColor="@color/White"
+                android:shadowColor="@color/Black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+            <ImageView
+                android:id="@+id/continentalimg"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/img9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/continental"/>
+            <TextView android:id="@+id/txt_example93"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/monotypecursive"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/img9"
+                android:text="Continental"
+                android:textColor="@color/White"
+                android:shadowColor="@color/Black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/relative5"
+            android:id="@+id/relative6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="4dp"
+                android:id="@+id/img10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/soup"
+                />
+            <TextView android:id="@+id/txt_example94"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/monotypecursive"
+                android:layout_above="@+id/im5"
+                android:text="Soup"
+                android:textColor="@color/White"
+                android:shadowColor="@color/Black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+            <ImageView
+                android:id="@+id/im5"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/img10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/desserts"/>
+            <TextView android:id="@+id/txt_example96"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/monotypecursive"
+                android:layout_alignParentBottom="true"
+                android:text="Desserts"
+                android:textColor="@color/White"
+                android:shadowColor="@color/Black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+            <ImageView
+                android:id="@+id/icecremeimg"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/img10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/icecreme"/>
+            <TextView android:id="@+id/txt_example97"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/monotypecursive"
+                android:layout_toRightOf="@+id/im5"
+                android:text=" IceCream"
+                android:textColor="@color/White"
+                android:shadowColor="@color/Black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

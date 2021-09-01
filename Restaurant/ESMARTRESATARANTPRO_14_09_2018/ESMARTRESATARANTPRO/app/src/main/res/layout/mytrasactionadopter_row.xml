@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+ 	<LinearLayout
+ 	    android:id="@+id/top_mytrasaction"
+ 	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:background="@android:drawable/list_selector_background"
+	    android:orientation="vertical" >
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:gravity="center"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/username" >
+	    </ImageView>
+	</LinearLayout>
+	<LinearLayout
+	    android:id="@+id/bottom_mytrasaction"
+ 	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginBottom="10dp"
+	    android:background="@android:drawable/list_selector_background"
+	    android:orientation="vertical" >
+	    
+	      <TextView
+	        android:id="@+id/Id_mytrasaction"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:gravity="left"
+	        android:textColor="@color/White">
+	    </TextView>
+	    
+	    <TextView
+	        android:id="@+id/TotalAmt_mytrasaction"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:gravity="left"
+	        android:textColor="@color/White">
+	    </TextView>
+	   
+	      <TextView
+	        android:id="@+id/Date_mytrasaction"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:gravity="left"
+	        android:textColor="@color/White">
+	    </TextView>
+	</LinearLayout>
+</LinearLayout>

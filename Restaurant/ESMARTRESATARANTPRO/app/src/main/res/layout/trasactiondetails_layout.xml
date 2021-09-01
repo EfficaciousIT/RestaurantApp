@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"  >
+  <LinearLayout
+	    android:id="@+id/title"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="50dp"
+ 	    android:gravity="center"
+ 	    android:visibility="gone"
+ 	    android:background="@color/Red"
+ 	    android:orientation="horizontal" >
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="3dp"
+	        android:textStyle="bold"
+	        android:layout_weight="0.5"
+	        android:text="Item Name"
+	        android:textSize="20sp"
+	        android:layout_marginLeft="10dp"
+	        android:textColor="@color/White">
+	    </TextView>
+	
+	      <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="right"
+	        android:textStyle="bold"
+	        android:layout_weight="0.5"
+	        android:text="Qty"
+	        android:textSize="20sp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:textColor="@color/White">
+	    </TextView>
+	  
+	     <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:text="Price"
+	        android:textSize="20sp"
+	        android:gravity="right"
+	        android:layout_marginRight="10dp"
+	        android:textColor="@color/White"
+	        android:layout_weight="0.5">
+	    </TextView>
+	</LinearLayout>
+     <ListView
+        android:id="@+id/listView_trasactiondetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:listSelector="@android:color/transparent">
+    </ListView>
+ 	<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:gravity="center"
+	    android:layout_marginBottom="5dp"
+	    android:layout_alignParentBottom="true">
+
+       <TextView
+	        android:textColor="@color/Red"
+	        android:layout_width="wrap_content"
+	        android:text="Total Amount"
+	        android:gravity="center"
+	        android:layout_weight="1"
+	        android:textStyle="bold"
+	        android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/ruppe_trasactiondetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/rupee" />
+         <TextView
+	        android:id="@+id/Total_trasactiondetails"
+	        android:layout_width="wrap_content"
+	        android:gravity="center"
+	        android:textColor="@color/Red"
+	        android:textStyle="bold"
+	        android:layout_marginRight="40dp"
+	        android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

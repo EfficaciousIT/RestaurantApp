@@ -1,0 +1,181 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg">
+
+	<ScrollView
+		android:id="@+id/scrollview"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:padding="6dip">
+
+			<LinearLayout
+				android:id="@+id/linear_title"
+				android:layout_width="match_parent"
+				android:layout_height="178dp"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="20dp"
+				android:gravity="center"
+				android:weightSum="1">
+
+				<ImageView
+					android:id="@+id/imageView1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:contentDescription="@null"
+					android:src="@drawable/logo2" />
+			</LinearLayout>
+
+
+			<FrameLayout
+				android:layout_width="wrap_content"
+				android:layout_gravity="center"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				>
+				<android.support.v7.widget.CardView
+					android:id="@+id/cv"
+					android:layout_width="300dp"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					app:cardCornerRadius="6dp"
+					app:cardElevation="3dp"
+					android:layout_marginBottom="20dp"
+					app:cardUseCompatPadding="true">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:orientation="vertical">
+
+						<RelativeLayout
+							android:layout_width="match_parent"
+							android:layout_height="45dp"
+							android:layout_marginTop="10dp">
+
+							<View
+								android:layout_width="8dp"
+								android:layout_height="match_parent"
+								android:layout_alignParentStart="true"
+								android:background="@color/colorPrimaryDark" />
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_centerVertical="true"
+								android:layout_marginStart="50dp"
+								android:text="LOGIN"
+								android:textColor="#FFCC00"
+								android:textSize="18sp"
+								android:textStyle="bold" />
+						</RelativeLayout>
+						<LinearLayout
+							android:id="@+id/RoleName_Login_linear"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="10dp"
+							android:layout_marginRight="10dp"
+							android:layout_marginTop="8dp"
+							android:orientation="horizontal">
+
+							<Spinner
+								android:id="@+id/RoleName_Login"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"
+								android:layout_margin="5dp"
+								android:background="@drawable/bg_spinner"
+								android:elevation="4dp"
+								android:padding="8dp"
+								android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="10dp"
+							android:layout_marginRight="10dp"
+							android:layout_marginTop="10dp"
+							android:paddingStart="8dp">
+
+							<android.support.design.widget.TextInputLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:textColorHint="#c5c5c5">
+
+								<EditText
+
+									android:id="@+id/UserName_Login"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:background="@drawable/selector_bg_edit"
+									android:hint="Username"
+									android:inputType="text"
+									android:paddingTop="8dp"
+									android:paddingBottom="2dp"
+									android:textColor="@color/Black"
+									android:textCursorDrawable="@drawable/bg_input_cursor"
+									android:textSize="16sp" />
+							</android.support.design.widget.TextInputLayout>
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="10dp"
+							android:layout_marginRight="10dp"
+							android:layout_marginTop="10dp"
+							android:paddingStart="8dp">
+
+							<android.support.design.widget.TextInputLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								app:passwordToggleEnabled="true"
+								android:textColorHint="#c5c5c5">
+
+								<EditText
+									android:id="@+id/Password_Login"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:background="@drawable/selector_bg_edit"
+									android:hint="Password"
+									android:inputType="textPassword"
+									android:paddingTop="8dp"
+									android:paddingBottom="2dp"
+									android:textColor="@color/Black"
+									android:textCursorDrawable="@drawable/bg_input_cursor"
+									android:textSize="16sp" />
+							</android.support.design.widget.TextInputLayout>
+						</LinearLayout>
+
+						<RelativeLayout
+							android:layout_width="match_parent"
+							android:layout_height="60dp"
+							android:layout_marginTop="25dp"
+							android:gravity="center">
+
+							<Button
+								android:id="@+id/Submit_login"
+								android:layout_width="150dp"
+								android:layout_height="50dp"
+								android:background="@drawable/bt_shape"
+								android:stateListAnimator="@drawable/state_list_animator_z"
+								android:text="GO"
+								android:textColor="@color/colorPrimary" />
+						</RelativeLayout>
+
+
+					</LinearLayout>
+				</android.support.v7.widget.CardView>
+
+			</FrameLayout>
+		</LinearLayout>
+
+	</ScrollView>
+</android.support.design.widget.CoordinatorLayout>

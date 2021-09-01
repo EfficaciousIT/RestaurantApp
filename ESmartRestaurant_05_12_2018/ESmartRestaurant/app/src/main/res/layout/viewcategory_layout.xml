@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1" >
+    <RelativeLayout
+		android:visibility="gone"
+        android:id="@+id/top"
+        android:layout_height="50dp"
+        android:layout_width="match_parent">
+ 		<SearchView
+
+	        android:id="@+id/search_viewcategory"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"/>
+ 	</RelativeLayout>
+     <ListView
+        android:id="@+id/gridView_viewcategoty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+		 android:layout_marginBottom="8dp">
+    </ListView>
+
+</RelativeLayout>

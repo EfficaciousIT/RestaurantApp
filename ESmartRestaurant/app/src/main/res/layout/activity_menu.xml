@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical" >
+   
+ 	<SearchView
+        android:id="@+id/search_view_menu"
+        android:background="@color/Transparent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+     <ListView
+         android:id="@+id/ListView_menu"
+         android:layout_below="@+id/search_view_menu"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="4dp"
+         android:gravity="center"
+       android:layout_above="@+id/chartLinear"
+         android:listSelector="@android:color/transparent"/>
+	
+	 <LinearLayout
+         android:id="@+id/chartLinear"
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="90dp"
+	    android:layout_marginTop="5dp"
+	    android:background="@color/colorPrimary"
+	    android:layout_alignParentBottom="true">
+         <RelativeLayout
+             android:paddingBottom="8dp"
+             android:background="@color/colorPrimary"
+             android:layout_weight="1"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/chartimg"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:background="@mipmap/add_to_cart"/>
+             <TextView
+                 android:id="@+id/itemcounttv"
+                 android:layout_marginTop="8dp"
+                 android:layout_marginStart="60dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="0 ITEM IN CART"
+                 android:textColor="@color/white"
+                 android:textSize="14dp"
+                 android:textStyle="bold"/>
+             <ImageView
+                 android:id="@+id/imgrupee"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/itemcounttv"
+                 android:layout_marginTop="12dp"
+                 android:layout_marginStart="60dp"
+                 android:background="@drawable/rupee"/>
+             <TextView
+                 android:id="@+id/totalamounttv"
+                 android:layout_below="@+id/itemcounttv"
+                 android:layout_marginTop="8dp"
+                 android:layout_marginStart="80dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="0"
+                 android:textColor="@color/white"
+                 android:textSize="15dp"
+                 android:textStyle="bold"/>
+             <TextView
+                 android:layout_below="@+id/totalamounttv"
+                 android:layout_marginTop="8dp"
+                 android:layout_marginStart="80dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="plus taxes"
+                 android:textColor="@color/white"
+                 android:textSize="15dp"
+                 android:textStyle="bold"/>
+         </RelativeLayout>
+         <RelativeLayout
+             android:layout_weight="1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:id="@+id/cart"
+                 android:textStyle="bold"
+                 android:textColor="@color/white"
+                 android:gravity="center"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="VIEW CART"/>
+             <ImageView
+                 android:tint="@android:color/white"
+                 android:layout_centerVertical="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+               android:layout_alignRight="@+id/cart"
+                 android:background="@mipmap/ic_keyboard_arrow_right_black_24dp"/>
+         </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

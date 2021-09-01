@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/Transparent"
+    android:gravity="center">  
+   
+	 <LinearLayout
+	     android:id="@+id/linear_top"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_marginLeft="20dp"
+	     android:layout_marginRight="20dp"
+	     android:layout_marginTop="10dp"
+	     android:background="@color/White"
+	     android:orientation="vertical" >
+	
+ 		<LinearLayout
+	        android:layout_width="match_parent"  
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginTop="20dp"
+	        android:layout_height="match_parent" 
+	        android:background="@color/Transparent"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	        
+	        <LinearLayout
+		        android:layout_width="wrap_content"  
+		        android:layout_marginBottom="10dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginTop="10dp"
+		        android:layout_height="wrap_content" 
+		        android:background="@color/Transparent"
+		        android:gravity="center"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+		       <ImageView 
+		           android:id="@+id/LogOutImageview_settingDialog"
+		           android:layout_width="100dp"
+		           android:layout_height="100dp"
+		           android:src="@drawable/logout"/>
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Log Out"
+		            android:textColor="@color/Black"
+		            android:textStyle="bold"/>
+		       </LinearLayout>
+		       <LinearLayout
+		        android:layout_width="wrap_content"  
+		        android:layout_marginBottom="10dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginTop="10dp"
+		         android:layout_weight="1"
+		        android:layout_height="wrap_content" 
+		        android:background="@color/Transparent"
+		        android:gravity="center"
+		        android:orientation="vertical" >
+		        <ImageView 
+		           android:id="@+id/NotificationImageview_settingDialog"
+		           android:layout_width="100dp"
+		           android:layout_height="100dp"
+		           android:src="@drawable/notification"/>
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Notification"
+		            android:textColor="@color/Black"
+		            android:textStyle="bold"/>
+	       </LinearLayout>
+		</LinearLayout>
+	
+	   <LinearLayout
+	        android:id="@+id/middle_linear"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:gravity="center"
+	        android:layout_margin="20dp"
+	        android:layout_below="@+id/linear_top"
+	        android:orientation="horizontal" >
+	
+	        <RelativeLayout
+			    android:layout_height="match_parent"
+			    android:layout_width="match_parent"
+			    android:gravity="center">
+		        <Button
+		            android:id="@+id/xbtnCancel_editageDialog"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"    
+		            android:layout_weight="1"  
+		            android:text="Cancel"
+		            android:textColor="@color/White"
+		            android:textStyle="bold"
+		            android:background="@color/Red"/>
+		     </RelativeLayout>
+	    </LinearLayout>
+   </LinearLayout> 
+</RelativeLayout>

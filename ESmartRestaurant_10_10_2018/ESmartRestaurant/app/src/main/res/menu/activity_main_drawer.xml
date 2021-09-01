@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_NewOrder"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="New Order" />
+        <item
+            android:id="@+id/nav_ExistingOrder"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Existing Order" />
+        <item
+            android:id="@+id/nav_ViewOrder"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="View Order" />
+        <item
+            android:id="@+id/nav_TakeAway"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Take Away" />
+        <item
+            android:id="@+id/nav_Menu"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Menu" />
+
+        <item
+            android:id="@+id/nav_bill"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Bill" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_Profile"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Profile" />-->
+            <item
+                android:id="@+id/nav_SignOut"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+	android:background="@color/Transparent">
+
+ 	<RelativeLayout
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_marginTop="5dp"
+ 	    android:layout_marginLeft="4dp"
+ 	     android:layout_marginBottom="5dp">
+ 	    
+ 	      <!--<CheckBox-->
+	        <!--android:id="@+id/chk_menu"-->
+	        <!--android:layout_width="wrap_content"-->
+	        <!--android:layout_height="wrap_content">-->
+	    <!--</CheckBox>-->
+		<TextView
+			android:id="@+id/item_Name_menu"
+			android:layout_marginEnd="130dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:text="Food Name"
+			android:textSize="16dp"
+			android:layout_alignBaseline="@+id/chk_menu"
+			android:layout_toEndOf="@+id/chk_menu"
+			android:textColor="@color/Black">
+		</TextView>
+		<TextView
+			android:id="@+id/item_type"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="1dp"
+			android:layout_marginStart="2dp"
+			android:text="Veg"
+			android:textStyle="italic"
+			android:layout_toEndOf="@+id/chk_menu"
+			android:layout_below="@+id/item_Name_menu"
+			>
+		</TextView>
+		<TextView
+			android:id="@+id/item_available"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="1dp"
+			android:layout_marginStart="2dp"
+			android:text=" - Available"
+			android:textSize="14dp"
+			android:textColor="@color/colorAccent"
+			android:layout_toEndOf="@+id/item_type"
+			android:layout_below="@+id/item_Name_menu"
+			>
+		</TextView>
+<RelativeLayout
+	android:id="@+id/relativeqty"
+    android:layout_marginEnd="70dp"
+    android:layout_alignParentEnd="true"
+	android:padding="5dp"
+	android:background="@drawable/shadow_tile"
+	android:layout_marginTop="8dp"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_toStartOf="@+id/ruppe_menu">
+
+			<ImageButton
+				android:layout_margin="4dp"
+				android:id="@+id/decrement"
+				android:padding="1dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@mipmap/subtract"/>
+		<TextView
+
+			android:id="@+id/ordervalue"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/green"
+			android:text="ADD"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:layout_toEndOf="@+id/decrement"/>
+	<ImageButton
+
+		android:layout_margin="4dp"
+		android:id="@+id/increment"
+		android:padding="1dp"
+		android:layout_toEndOf="@+id/ordervalue"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@mipmap/plus"/>
+</RelativeLayout>
+		<ImageView
+			android:layout_marginTop="17dp"
+			android:id="@+id/ruppe_menu"
+			android:layout_height="16dp"
+			android:layout_width="wrap_content"
+			android:layout_toStartOf="@+id/price_menu"
+			android:src="@drawable/rupee"/>
+
+		<TextView
+			android:layout_marginTop="12dp"
+			android:id="@+id/price_menu"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:text="40"
+			android:layout_marginEnd="8dp"
+			android:layout_alignParentEnd="true"
+			android:textSize="16dp"
+			android:textColor="@color/green"
+			>
+		</TextView>
+	</RelativeLayout>
+</LinearLayout>

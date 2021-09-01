@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+ 	<LinearLayout
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:background="@android:drawable/list_selector_background"
+ 	    android:gravity="center"
+ 	    android:layout_marginTop="5dp"
+ 	    android:layout_marginLeft="10dp"
+ 	     android:layout_marginBottom="5dp"
+ 	    android:orientation="horizontal" >
+ 	    
+ 	  <!--    <CheckBox
+	        android:id="@+id/chk_menu"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+	    </CheckBox>  -->
+	
+	    <TextView
+	        android:id="@+id/item_Name_viewmenu"
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="3dp"
+	        android:textStyle="bold"
+	        android:layout_weight="0.5"
+	        android:textColor="@color/White">
+	    </TextView>
+	
+	    
+	<!--       <Spinner
+	        android:id="@+id/qtyspinner_menu"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textStyle="bold"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:textColor="@color/Black"> 
+	    </Spinner>  -->
+	  
+	    
+	
+	  <ImageView 
+	         android:id="@+id/ruppe_viewmenu"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:src="@drawable/rupee"/>
+	  
+	     <TextView
+	        android:id="@+id/price_viewmenu"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:textColor="@color/Red"
+	        android:layout_weight="0.5">
+	    </TextView>
+	</LinearLayout>
+</LinearLayout>

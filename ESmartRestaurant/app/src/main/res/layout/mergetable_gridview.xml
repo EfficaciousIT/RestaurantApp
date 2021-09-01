@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    >
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1.0"
+        android:numColumns="2"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:stretchMode="columnWidth"
+        android:listSelector="@android:color/transparent"
+       android:layout_marginBottom="65dp"
+       >
+
+    </GridView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/btn_confrm"
+            android:textColor="@color/White"
+            android:layout_width="wrap_content"
+            android:text="Confirm"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_style"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="5dp"
+            android:textStyle="bold"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:textColor="@color/White"
+            android:layout_width="wrap_content"
+            android:text="Cancel"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_style"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="5dp"
+            android:textStyle="bold"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>

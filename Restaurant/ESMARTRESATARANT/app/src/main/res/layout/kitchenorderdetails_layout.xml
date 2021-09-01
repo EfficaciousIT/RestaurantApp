@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:id="@+id/title"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="50dp"
+ 	    android:gravity="center"
+ 	    android:background="@color/Red"
+ 	    android:orientation="horizontal" >
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="3dp"
+	        android:textStyle="bold"
+	        android:layout_weight="0.5"
+	        android:text="Item Name"
+	        android:layout_marginLeft="10dp"
+	        android:textColor="@color/White">
+	    </TextView>
+	
+	    
+	      <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="right"
+	        android:textStyle="bold"
+	        android:layout_weight="0.5"
+	        android:text="Qty"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:textColor="@color/White">
+	    </TextView>
+	 </LinearLayout>
+     <ListView
+        android:id="@+id/listView_kitchenorderdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_weight="1.0"
+        android:listSelector="@android:color/transparent">
+    </ListView>
+     <LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:layout_alignParentBottom="true">
+
+       <Button
+           android:id="@+id/btnSubmittobill_billorderdetails"
+	        android:textColor="@color/White"
+	        android:layout_width="wrap_content"
+	        android:text="Dispach"
+	        android:gravity="center"
+	        android:layout_weight="1"
+	        android:background="@color/Red"
+	        android:textStyle="bold"
+	        android:textSize="20sp"
+	        android:layout_height="50dp"/>
+    </LinearLayout>
+</LinearLayout>

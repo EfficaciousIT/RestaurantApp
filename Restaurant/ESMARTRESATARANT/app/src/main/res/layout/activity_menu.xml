@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+   
+ 	<SearchView
+        android:id="@+id/search_view_menu"
+        android:background="@drawable/whitebox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+     <ListView
+         android:id="@+id/ListView_menu"
+         android:layout_below="@+id/search_view_menu"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_margin="4dp"
+         android:gravity="center"
+         android:layout_weight="1.0"
+         android:listSelector="@android:color/transparent"/>
+	
+	 <LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:layout_marginTop="5dp"
+	    android:background="@color/Red"
+	    android:layout_alignParentBottom="true">
+
+       <TextView
+	        android:id="@+id/ViewOrder_menu"
+	        android:textColor="@color/White"
+	        android:layout_width="match_parent"
+	        android:text="View Order"
+	        android:gravity="center"
+	        android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

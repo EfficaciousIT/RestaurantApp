@@ -1,0 +1,70 @@
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+	<RelativeLayout
+		android:id="@+id/linear_category"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		>
+ 	<ImageView
+		android:layout_marginTop="5dp"
+		android:id="@+id/item_image_category"
+		android:layout_marginStart="3dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/chinese_sm"
+		/>
+		<RelativeLayout
+			android:layout_marginTop="5dp"
+			android:layout_marginStart="15dp"
+			android:layout_toRightOf="@+id/item_image_category"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/item_text_category"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Chinese"
+			android:textSize="16dp"
+			android:textColor="@color/Black"
+			android:textStyle="bold"/>
+			<TextView
+				android:id="@+id/vegtv"
+				android:layout_marginTop="1dp"
+				android:layout_below="@+id/item_text_category"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Veg/Non Veg "
+				android:textStyle="italic"/>
+			<View
+				android:id="@+id/line"
+				android:layout_marginTop="4dp"
+				android:layout_below="@+id/vegtv"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:layout_weight="1"
+				android:background="@drawable/line1" />
+
+			<TextView
+				android:textSize="12dp"
+				android:id="@+id/timetv"
+				android:layout_marginTop="1dp"
+				android:layout_below="@+id/line"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="15-20 mins "
+				/>
+			<TextView
+				android:layout_marginTop="1dp"
+				android:layout_below="@+id/line"
+				android:layout_alignParentEnd="true"
+				android:layout_marginEnd="15dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Family Food"
+				/>
+		</RelativeLayout>
+	</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
